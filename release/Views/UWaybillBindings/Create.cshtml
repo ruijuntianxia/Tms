@@ -1,0 +1,70 @@
+﻿@model TMSOrderCar.Models.UWaybillBinding
+
+@{
+    ViewData["Title"] = "新增";
+}
+
+<h2>新增</h2>
+
+<h4>订单绑定车牌</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @*<div class="form-group">
+                    <label asp-for="DocEntry" class="control-label"></label>
+                    <input asp-for="DocEntry" class="form-control" />
+                    <span asp-validation-for="DocEntry" class="text-danger"></span>
+                </div>*@
+            <div class="form-group">
+                <label asp-for="OrderNo" class="control-label"></label>
+                <input asp-for="OrderNo" class="form-control" />
+                <span asp-validation-for="OrderNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Carnumber" class="control-label"></label>
+                <input asp-for="Carnumber" class="form-control" />
+                <span asp-validation-for="Carnumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExpectDateLoad" class="control-label"></label>
+                <input asp-for="ExpectDateLoad" class="form-control" />
+                <span asp-validation-for="ExpectDateLoad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ActualDateLoad" class="control-label"></label>
+                <input asp-for="ActualDateLoad" class="form-control" />
+                <span asp-validation-for="ActualDateLoad" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="CreateUser" class="control-label"></label>
+                <input asp-for="CreateUser" class="form-control" />
+                <span asp-validation-for="CreateUser" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                <label asp-for="UpdateUser" class="control-label"></label>
+                <input asp-for="UpdateUser" class="form-control" />
+                <span asp-validation-for="UpdateUser" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <input type="submit" value="保存" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">返回</a>
+</div>
+<script>
+
+    (function () {
+        verifyToken();
+    }());
+
+</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

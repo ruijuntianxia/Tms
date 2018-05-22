@@ -1,0 +1,11 @@
+F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\bin\Release\netcoreapp2.0\TMSOrderCar.deps.json
+F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\bin\Release\netcoreapp2.0\TMSOrderCar.runtimeconfig.json
+F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\bin\Release\netcoreapp2.0\TMSOrderCar.runtimeconfig.dev.json
+F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\bin\Release\netcoreapp2.0\TMSOrderCar.dll
+F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\bin\Release\netcoreapp2.0\TMSOrderCar.pdb
+F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\obj\Release\netcoreapp2.0\TMSOrderCar.csprojAssemblyReference.cache
+F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\obj\Release\netcoreapp2.0\TMSOrderCar.csproj.CoreCompileInputs.cache
+F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\obj\Release\netcoreapp2.0\TMSOrderCar.AssemblyInfoInputs.cache
+F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\obj\Release\netcoreapp2.0\TMSOrderCar.AssemblyInfo.cs
+F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\obj\Release\netcoreapp2.0\TMSOrderCar.dll
+F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\obj\Release\netcoreapp2.0\TMSOrderCar.pdb

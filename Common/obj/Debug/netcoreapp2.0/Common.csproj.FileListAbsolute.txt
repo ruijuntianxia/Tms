@@ -1,0 +1,8 @@
+F:\JUN\project\WEB\TMSOrderCar\Common\bin\Debug\netcoreapp2.0\Common.deps.json
+F:\JUN\project\WEB\TMSOrderCar\Common\bin\Debug\netcoreapp2.0\Common.dll
+F:\JUN\project\WEB\TMSOrderCar\Common\bin\Debug\netcoreapp2.0\Common.pdb
+F:\JUN\project\WEB\TMSOrderCar\Common\obj\Debug\netcoreapp2.0\Common.csproj.CoreCompileInputs.cache
+F:\JUN\project\WEB\TMSOrderCar\Common\obj\Debug\netcoreapp2.0\Common.AssemblyInfoInputs.cache
+F:\JUN\project\WEB\TMSOrderCar\Common\obj\Debug\netcoreapp2.0\Common.AssemblyInfo.cs
+F:\JUN\project\WEB\TMSOrderCar\Common\obj\Debug\netcoreapp2.0\Common.dll
+F:\JUN\project\WEB\TMSOrderCar\Common\obj\Debug\netcoreapp2.0\Common.pdb

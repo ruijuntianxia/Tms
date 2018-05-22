@@ -1,0 +1,14 @@
+F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=TMSOrderCar
+--content-root=F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar
+--file=F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\Views\Home\Index.cshtml
+--file=F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\Views\Shared\_Layout.cshtml
+--file=F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\Views\UWaybillBindings\Create.cshtml
+--file=F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\Views\UWaybillBindings\Delete.cshtml
+--file=F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\Views\UWaybillBindings\Details.cshtml
+--file=F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\Views\UWaybillBindings\Edit.cshtml
+--file=F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\Views\UWaybillBindings\Index.cshtml
+--file=F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\Views\_ViewImports.cshtml
+--file=F:\JUN\project\WEB\TMSOrderCar\TMSOrderCar\Views\_ViewStart.cshtml
