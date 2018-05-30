@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TmsApi</name>
+    </assembly>
+    <members>
+        <member name="T:TmsApi.Common.AutoMapper.AutoMapperProfile">
+            <summary>
+            AutoMapperProfile 公共类
+            </summary>
+        </member>
+        <member name="M:TmsApi.Common.AutoMapper.AutoMapperProfile.#ctor">
+            <summary>
+            automapper 声明
+            </summary>
+        </member>
+        <member name="P:TmsApi.Common.ConfigurationOptions.JwtOptions.Secret">
+            <summary>
+            jwt的密钥。
+            </summary>
+        </member>
+        <member name="P:TmsApi.Common.ConfigurationOptions.JwtOptions.expire">
+            <summary>
+            token的有效期，单位为秒,默认1200s
+            </summary>
+        </member>
+        <member name="M:TmsApi.Common.ResultMessage.GetResultMessage(System.String,TmsApi.Models.ReportTvModels,System.String,System.Int32,System.Int32)">
+            <summary>
+            返回结果拼接
+            </summary>
+            <param name="restring">返回数据Data</param>
+            <param name="olap">前台传递参数</param>
+            <param name="mess">返回查询结果消息成功消息,错误消息</param>
+            <param name="n">返回查询结果状态</param>
+            <param name="count">返回数据结果数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Common.ResultMessage.GetResultMessage(System.String,TmsApi.Models.User,System.String,System.Int32,System.Int32)">
+            <summary>
+            返回登录结果拼接
+            </summary>
+            <param name="restring">返回数据Data</param>
+            <param name="olap">前台传递参数</param>
+            <param name="mess">返回查询结果消息成功消息,错误消息</param>
+            <param name="n">返回查询结果状态</param>
+            <param name="count">返回数据结果数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Common.ResultMessage.GetResultMessage(System.String,TmsApi.DTO.Response.UserInfoDTO,System.String,System.Int32,System.Int32)">
+            <summary>
+            返回登录结果拼接
+            </summary>
+            <param name="restring">返回数据Data</param>
+            <param name="olap">前台传递参数</param>
+            <param name="mess">返回查询结果消息成功消息,错误消息</param>
+            <param name="n">返回查询结果状态</param>
+            <param name="count">返回数据结果数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Controllers.LoginController.LoginByNameAsync(TmsApi.DTO.Request.UserDTO)">
+            <summary>
+            通过用户名密码登陆。
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TmsApi.Controllers.ReportTvController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TmsApi.Controllers.ReportTvController.#ctor(Microsoft.Extensions.Options.IOptions{TmsApi.Models.AppSettings},AutoMapper.IMapper)">
+            <summary>
+            重写构造函数，包含注入的配置信息
+            </summary>
+            <param name="setting"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:TmsApi.Controllers.ReportTvController.GetReport(TmsApi.DTO.Request.GetReportDTO)">
+            <summary>
+            储位资料 Api,返回json存在子项
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Controllers.ReportTvController.GetReportTable(TmsApi.DTO.Request.GetReportTableDTO)">
+            <summary>
+            出入库预约，返回json为table直接转化
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Controllers.ReportTvController.GetReportDet(TmsApi.DTO.Request.GetReportDetDTO)">
+            <summary>
+            储位明细资料API，返回json为table直接转化
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Controllers.ReportTvController.GetReportTvMapRedis(TmsApi.DTO.Request.GetReportTableDTO)">
+            <summary>
+            运单+车牌+看货狗 redis查询
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Controllers.ReportTvController.GetReportTodOrder(TmsApi.DTO.Request.GetReportDTO)">
+            <summary>
+            今日运输订单
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Controllers.ReportTvController.GetReportTransPortaTion(TmsApi.DTO.Request.GetReportDTO)">
+            <summary>
+            在途运输订单
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Controllers.ReportTvController.GetReportTptShipment(TmsApi.DTO.Request.GetReportTableDTO)">
+            <summary>
+            地图路线坐标 运单+车牌+看货狗 oracle查询
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Controllers.ReportTvController.GetReportVacancy(TmsApi.DTO.Request.VacancyDTO)">
+            <summary>
+            储位空置率
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="F:TmsApi.Dall.ResultGetTableTV.sqlMapXy">
+            <summary>
+            运输
+            </summary>
+        </member>
+        <member name="F:TmsApi.Dall.ResultGetTableTV.sqlStorageDet">
+            <summary>
+            储位信息
+            </summary>
+        </member>
+        <member name="M:TmsApi.Dall.ResultGetTableTV.getresult(TmsApi.Models.ReportTvModels,Microsoft.Extensions.Options.IOptions{TmsApi.Models.AppSettings})">
+            <summary>
+            大屏展示 储位信息
+            </summary>
+            <param name="olap"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Dall.ResultGetTableTV.GetVacancy(TmsApi.Models.ReportTvModels,Microsoft.Extensions.Options.IOptions{TmsApi.Models.AppSettings})">
+            <summary>
+            储位空置率
+            </summary>
+            <param name="olap"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Dall.ResultGetTableTV.getresultTable(TmsApi.Models.ReportTvModels,Microsoft.Extensions.Options.IOptions{TmsApi.Models.AppSettings})">
+            <summary>
+            大屏展示 预约信息
+            </summary>
+            <param name="olap"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Dall.ResultGetTableTV.getresultDet(TmsApi.Models.ReportTvModels,Microsoft.Extensions.Options.IOptions{TmsApi.Models.AppSettings})">
+            <summary>
+            大屏展示 储位明细信息
+            </summary>
+            <param name="olap"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Dall.ResultGetTableTV.GetTvMap(TmsApi.Models.ReportTvModels,Microsoft.Extensions.Options.IOptions{TmsApi.Models.AppSettings})">
+            <summary>
+            大屏展示 地图坐标 弃用 MapOrder
+            </summary>
+            <param name="olap"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Dall.ResultGetTableTV.GetTodOrder(TmsApi.Models.ReportTvModels,Microsoft.Extensions.Options.IOptions{TmsApi.Models.AppSettings})">
+            <summary>
+            大屏展示 Today Order
+            </summary>
+            <param name="olap"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Dall.ResultGetTableTV.GetTransPortaTion(TmsApi.Models.ReportTvModels,Microsoft.Extensions.Options.IOptions{TmsApi.Models.AppSettings})">
+            <summary>
+            TransPortaTion
+            </summary>
+            <param name="olap"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Dall.ResultGetTableTV.GetTptShipment(TmsApi.Models.ReportTvModels,Microsoft.Extensions.Options.IOptions{TmsApi.Models.AppSettings})">
+            <summary>
+            TptShipment
+            </summary>
+            <param name="olap"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Dall.ResultGetTableTV.GetTptShipmentCount(TmsApi.Models.ReportTvModels,Microsoft.Extensions.Options.IOptions{TmsApi.Models.AppSettings})">
+            <summary>
+            运单总数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Dall.ResultRedisDAll.GetTvMapRedis(TmsApi.Models.ReportTvModels,Microsoft.Extensions.Options.IOptions{TmsApi.Models.AppSettings})">
+            <summary>
+            地图坐标和看货狗编号
+            </summary>
+            <param name="olap"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TmsApi.Factory.DbFactory">
+            <summary>
+            工厂类
+            </summary>
+        </member>
+        <member name="M:TmsApi.Factory.DbFactory.CreateDbConnection(TmsApi.Factory.DbProvider,System.String)">
+            <summary>
+            CreateDbConnection
+            </summary>
+            <param name="type"></param>
+            <param name="connectionString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Factory.DbFactory.CreateDbCommand(TmsApi.Factory.DbProvider)">
+            <summary>
+            建立 DbCommand
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Factory.DbFactory.CreateDbCommand(System.String,System.Data.IDbConnection)">
+            <summary>
+            CreateDbCommand
+            </summary>
+            <param name="sql"></param>
+            <param name="conn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Factory.DbUtility.#ctor(TmsApi.Models.ReportTvModels,TmsApi.Factory.DbProvider)">
+            <summary>
+            创建数据库连接
+            </summary>
+        </member>
+        <member name="M:TmsApi.Factory.DbUtility.CreatConnection">
+            <summary>
+            判断并打开conn
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TmsApi.Factory.DbUtility.ExecuteReader(TmsApi.Models.ReportTvModels)">
+            <summary>
+            执行查询sql语句
+            </summary>
+            <param name="olap">查询sql语句</param>
+            <returns>返回一个表</returns>
+        </member>
+        <member name="M:TmsApi.Factory.DbUtility.ExecuteReader(System.String,System.Data.IDataParameter[])">
+            <summary>
+            执行查询带参的sql语句
+            </summary>
+            <param name="sql">查询sql语句</param>
+            <param name="par">sql语句中的参数</param>
+            <returns>返回一个表</returns>
+        </member>
+        <member name="M:TmsApi.Factory.DbUtility.ExecuteNonQuery(System.String)">
+            <summary>
+            执行无参的增，删，改sql语句
+            </summary>
+            <param name="sql">增，删，改的sql语句</param> 
+            <returns>返回所影响的行数</returns>
+        </member>
+        <member name="M:TmsApi.Factory.DbUtility.ExecuteNonQuery(System.String,System.Data.IDbDataParameter[])">
+            <summary>
+            执行带参的增，删，改sql语句
+            </summary>
+            <param name="sql">增，删，改的sql语句</param>
+            <param name="par">sql语句中的参数</param>
+            <returns>返回所影响的行数</returns>
+        </member>
+        <member name="M:TmsApi.Factory.DbUtility.ExecuteTransaction(System.Collections.Hashtable)">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="SqlList">SQL语句的哈希表（key为sql语句，value是该语句的OleDbParameter[]）</param>
+        </member>
+        <member name="T:TmsApi.Models.AppSettings">
+            <summary>
+            配置文件
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.AppSettings.SqlConnectionString">
+            <summary>
+            sql 链接
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.AppSettings.OraConnectionString">
+            <summary>
+            oracle链接
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.AppSettings.redisMap">
+            <summary>
+            redis 地图数据
+            </summary>
+        </member>
+        <member name="T:TmsApi.Models.SqlConnectionString">
+            <summary>
+            sql server 链接
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.SqlConnectionString.Test193">
+            <summary>
+            TestConnect
+            </summary>
+        </member>
+        <member name="T:TmsApi.Models.OraConnectionString">
+            <summary>
+            oracle 链接
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.OraConnectionString.TestScmpOledb">
+            <summary>
+            测试oledb链接
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.OraConnectionString.TestScmpOdbc">
+            <summary>
+            测试odbc链接
+            </summary>
+        </member>
+        <member name="T:TmsApi.Models.RedisMap">
+            <summary>
+            Redis 
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.RedisMap.Host">
+            <summary>
+            ip
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.RedisMap.Post">
+            <summary>
+            端口
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.RedisMap.key">
+            <summary>
+            key值
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.ReportTvModels.name">
+            <summary>
+            业务分类
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.ReportTvModels.page">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.ReportTvModels.value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.ReportTvModels.pageSize">
+            <summary>
+            每页显示项目数
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.ReportTvModels.pageIndex">
+            <summary>
+            当前页（跳转后的页面编号）
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.ReportTvModels.connect">
+            <summary>
+            承接数据库链接
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.ReportTvModels.sql">
+            <summary>
+            承接sql语句
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.ReportTvModels.warehouse">
+            <summary>
+            仓库
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.ReportTvModels.positions">
+            <summary>
+            仓位
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.ReportTvModels.location">
+            <summary>
+            储位信息
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.ReportTvModels.OrderNo">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+        <member name="P:TmsApi.Models.ReportTvModels.ShipmentNo">
+            <summary>
+            装运编号
+            </summary>
+        </member>
+        <member name="T:TmsApi.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TmsApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:TmsApi.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TmsApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureServices
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:TmsApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

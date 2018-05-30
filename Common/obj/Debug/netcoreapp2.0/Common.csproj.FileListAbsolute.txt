@@ -6,3 +6,4 @@ F:\JUN\project\WEB\TMSOrderCar\Common\obj\Debug\netcoreapp2.0\Common.AssemblyInf
 F:\JUN\project\WEB\TMSOrderCar\Common\obj\Debug\netcoreapp2.0\Common.AssemblyInfo.cs
 F:\JUN\project\WEB\TMSOrderCar\Common\obj\Debug\netcoreapp2.0\Common.dll
 F:\JUN\project\WEB\TMSOrderCar\Common\obj\Debug\netcoreapp2.0\Common.pdb
+F:\JUN\project\WEB\TMSOrderCar\Common\obj\Debug\netcoreapp2.0\Common.csprojAssemblyReference.cache

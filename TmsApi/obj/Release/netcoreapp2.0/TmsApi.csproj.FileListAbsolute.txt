@@ -1,0 +1,12 @@
+F:\JUN\project\WEB\TMSOrderCar\TmsApi\bin\Release\netcoreapp2.0\TmsApi.deps.json
+F:\JUN\project\WEB\TMSOrderCar\TmsApi\bin\Release\netcoreapp2.0\TmsApi.runtimeconfig.json
+F:\JUN\project\WEB\TMSOrderCar\TmsApi\bin\Release\netcoreapp2.0\TmsApi.runtimeconfig.dev.json
+F:\JUN\project\WEB\TMSOrderCar\TmsApi\bin\Release\netcoreapp2.0\TmsApi.dll
+F:\JUN\project\WEB\TMSOrderCar\TmsApi\bin\Release\netcoreapp2.0\TmsApi.pdb
+F:\JUN\project\WEB\TMSOrderCar\TmsApi\obj\Release\netcoreapp2.0\TmsApi.csproj.CoreCompileInputs.cache
+F:\JUN\project\WEB\TMSOrderCar\TmsApi\obj\Release\netcoreapp2.0\TmsApi.AssemblyInfoInputs.cache
+F:\JUN\project\WEB\TMSOrderCar\TmsApi\obj\Release\netcoreapp2.0\TmsApi.AssemblyInfo.cs
+F:\JUN\project\WEB\TMSOrderCar\TmsApi\obj\Release\netcoreapp2.0\TmsApi.dll
+F:\JUN\project\WEB\TMSOrderCar\TmsApi\obj\Release\netcoreapp2.0\TmsApi.pdb
+F:\JUN\project\WEB\TMSOrderCar\TmsApi\bin\Release\netcoreapp2.0\TmsApi.xml
+F:\JUN\project\WEB\TMSOrderCar\TmsApi\obj\Release\netcoreapp2.0\TmsApi.csprojAssemblyReference.cache
